@@ -11,8 +11,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node_version: "12"
-      - run:  yarn ci
-      - run:  yarn run format:check
-      - run:  yarn run test --coverage
+      - run:  npm ci
+      - run:  npm run format:check
+      - run:  npm run test --coverage
         env:
           CI: true
